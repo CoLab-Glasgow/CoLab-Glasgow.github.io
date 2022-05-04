@@ -94,3 +94,20 @@ A sample for `[SOCIALS]` is:
 </div>
 ```
 Feel free to change these default socials per team member. You can add more than 3 if you want too - they will resize and reposition automagically, just try stick to the same CSS pattern.
+
+
+## Adding papers
+
+To add a new paper to the `Papers` section, paste the following to `index.html` above the line marked `<!-- TO ADD NEW PAPERS, PASTE ABOVE THIS LINE -->` and fill in the necessary details.
+
+```html
+<tr>
+    <td>[TITLE]</td>
+    <td>[VENUE] [YEAR]</td>
+    <td>[AUTHORS]</td>
+    <td>
+        <a href="[LINK TO PUBLICATION]" title="Publication"><i class="fa fa-2x fa-file-pdf-o"></i></a>
+        <a href="[LINK TO DBLP BIBTEX]" title="BibTex"><i class="fa fa-2x fa-file-code-o"></i></a>
+    </td>
+</tr>
+```
