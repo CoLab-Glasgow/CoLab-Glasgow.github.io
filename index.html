@@ -404,22 +404,6 @@
                     <div class="column column-40 column-offset-10">
                         <div class="container">
                             <div class="row"><div class="column">
-                                <div class="tool-title"><a class="button" href="https://bitbucket.org/abcd-glasgow/mungo-tools/src/master/">Mungo</a></div>
-                            </div></div>
-                            <div class="row"><div class="column">
-                                <p>Mungo is a Java front-end tool used to <strong>statically check</strong> the <strong>order of method calls</strong>. 
-                                   It is implemented using the JastAdd framework. 
-                                   A protocol definition is described as a sequence of method calls, the order of which determines the validity of the protocol.</p>
-                                <p>A <strong>typestate</strong> file is defined and associated to a class. 
-                                   The Mungo tool checks that the object instantiating the class performs method calls by following its declared typestate. 
-                                   If the object respects the typestate, the code can be compiled and run as standard Java code. 
-                                   If the typestate is violated, Mungo reports the errors.</p>
-                            </div></div>
-                        </div>
-                    </div>
-                    <div class="column column-40 tinted-bg">
-                        <div class="container">
-                            <div class="row"><div class="column">
                                 <div class="tool-title"><a class="button" href="https://github.com/hrjakobsen/papaya-tutorial">Papaya</a></div>
                             </div></div>
                             <div class="row"><div class="column">
@@ -430,23 +414,7 @@
                             </div></div>
                         </div>
                     </div>
-                </div>
-
-                <div class="row">
-                    <div class="column column-40 column-offset-10 tinted-bg">
-                        <div class="container">
-                            <div class="row"><div class="column center">
-                                <div class="tool-title"><a class="button" href="https://github.com/mungotypesystem">Mungoi & Mungob</a></div>
-                            </div></div>
-                            <div class="row"><div class="column">
-                                <strong>Mungoi</strong> and <strong>Mungob</strong> are two prototype implementations of a fully formalized core object oriented language, with typestate annotations. 
-                                Mungoi supports <strong>typestate inference</strong>, where the most permissible typestate is inferred from a class definition. 
-                                Mungob supports <strong>behavioural separation</strong> to lessen the linearity constraint present in other versions of Mungo. 
-                                Through a parallel construct, a parallel typestate can be split into two constituents, which each can be used separately and later be joined back together.
-                            </div></div>
-                        </div>
-                    </div>
-                    <div class="column column-40">
+                    <div class="column column-40 tinted-bg">
                         <div class="container">
                             <div class="row"><div class="column">
                                 <div class="tool-title"><a class="button" href="https://github.com/ArwaAlsubhiM/Coconut_tool">Coconut</a></div>
@@ -455,6 +423,28 @@
                                 Coconut introduces <strong>typestates in C++</strong> through a typestates library, providing templates for protocol definitions. 
                                 Objects can then be <strong>statically checked</strong> against these protocols to ensure they behave accordingly. 
                                 This project is expected to aid programmers by helping them detect violations of protocols that they themselves define, making the programming process more flexible, practical, and trouble-free.
+                            </div></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="column column-40 column-offset-10 tinted-bg">
+                        <div class="container">
+                            <div class="row"><div class="column">
+                                <div class="tool-title"><a class="button" href="https://github.com/CoLab-Glasgow/timed-mungo">Timed Mungo</a></div>
+                            </div></div>
+                            <div class="row"><div class="column">
+                                Timed Mungo is an extension to the <a href="https://bitbucket.org/abcd-glasgow/mungo-tools/">Mungo</a> toolchain, that adds a timed variant of <strong>typestates to Java programs</strong>. Using the extended StMungo tool a timed multiparty session type is projected into local protocols which, using the <strong>@Typestate</strong> annotation, can be added to a Java class. Timed Mungo will then verify that the protocol is adhered to, within the specified timing constraints.
+                            </div></div>
+                        </div>
+                    </div>
+                    <div class="column column-40">
+                        <div class="container">
+                            <div class="row"><div class="column">
+                                <div class="tool-title"><a class="button" href="https://github.com/hrjakobsen/Tropicode">Tropicode</a></div>
+                            </div></div>
+                            <div class="row"><div class="column">
+                                Tropicode is a a tool for analyzing typestates for languages targeting the <strong>Java Virtual Machine</strong> (JVM). As opposed to the previous tool, Tropicode works on the compiled low-level JVM bytecode, making it possible to check protocols in all languages targeting the JVM such as Java, Kotling, and Clojure. Out of the box it provides a Java integration with a <strong>@Protocol</strong> annotation that can be added directly to classes. It also provides mechanisms to add protocol to pre-existing classes such as the Java standard library.
                             </div></div>
                         </div>
                     </div>
