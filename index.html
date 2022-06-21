@@ -12,20 +12,32 @@
     <body>
         <!-- Nav bar -->
         <nav>
-            <section>
-                <div class="container"><div class="row">
-                    <div class="column column-20"><a href="#"><h3>CoLab</h3></a></div>
-                    <div class="column column-offset-40"><a class="button button-clear nav-item" href="#team">Team</a></div>
-                    <div class="column"><a class="button button-clear nav-item" href="#papers">Papers</a></div>
-                    <div class="column"><a class="button button-clear nav-item" href="#tools">Tools</a></div>
-                </div></div>
-            </section>
+            <div class="container">
+                <div class="row">
+                    <div class="column">
+                        <a href="#"><h3>CoLab</h3></a>
+                    </div>
+                    <div class="column column-offset-40">
+                        <a class="button button-clear nav-item" href="#team">Team</a>
+                    </div>
+                    <div class="column">
+                        <a class="button button-clear nav-item" href="#papers">Papers</a>
+                    </div>
+                    <div class="column">
+                        <a class="button button-clear nav-item" href="#tools">Tools</a>
+                    </div>
+                </div>
+            </div>
         </nav>
 
         <header>
-            <div class="container"><div class="row"><div class="column">
-                <img class="logo" src="images/colab-logo.png" alt="CoLab Logo">
-            </div></div></div>
+            <div class="container">
+                <div class="row">
+                    <div class="column">
+                        <img class="logo" src="images/colab-logo.png" alt="CoLab Logo">
+                    </div>
+                </div>
+            </div>
         </header>
 
         <!-- Team -->
@@ -44,11 +56,11 @@
 
                             <div class="row no-padding">
                                 <!-- IMG of team member -->
-                                <div class="column column-25">
+                                <div class="column column-25 order-1">
                                     <img src="images/Ornela.jpg" alt="Photo of Ornela Dardha">
                                 </div>
                                 <!-- About team member -->
-                                <div class="column column-75">
+                                <div class="column column-75 order-2">
                                     <div class="container">
                                         <div class="row no-padding">
                                             <div class="column">
@@ -86,7 +98,7 @@
 
                             <div class="row no-padding">
                                 <!-- About team member -->
-                                <div class="column column-75">
+                                <div class="column column-75 order-2">
                                     <div class="container">
                                         <div class="row no-padding">
                                             <div class="column">
@@ -107,7 +119,7 @@
                                     </div>
                                 </div>
                                 <!-- IMG of team member -->
-                                <div class="column column-25">
+                                <div class="column column-25 order-1">
                                     <img src="images/Uma.jpg" alt="Photo of Uma Zalakain">
                                 </div>
                             </div>
@@ -126,11 +138,11 @@
 
                             <div class="row no-padding">
                                 <!-- IMG of team member -->
-                                <div class="column column-25">
+                                <div class="column column-25 order-1">
                                     <img src="images/Mathias.jpeg" alt="Photo of Mathias Jakobsen">
                                 </div>
                                 <!-- About team member -->
-                                <div class="column column-75">
+                                <div class="column column-75 order-2">
                                     <div class="container">
                                         <div class="row no-padding">
                                             <div class="column">
@@ -174,7 +186,7 @@
 
                             <div class="row no-padding">
                                 <!-- About team member -->
-                                <div class="column column-75">
+                                <div class="column column-75 order-2">
                                     <div class="container">
                                         <div class="row no-padding">
                                             <div class="column">
@@ -200,7 +212,7 @@
                                     </div>
                                 </div>
                                 <!-- IMG of team member -->
-                                <div class="column column-25">
+                                <div class="column column-25 order-1">
                                     <img src="images/Matt.jpg" alt="Photo of Matthew Alan Le Brun">
                                 </div>
                             </div>
@@ -219,11 +231,11 @@
 
                             <div class="row no-padding">
                                 <!-- IMG of team member -->
-                                <div class="column column-25">
+                                <div class="column column-25 order-1">
                                     <img src="images/Lena.jpg" alt="Photo of Lena Latifa">
                                 </div>
                                 <!-- About team member -->
-                                <div class="column column-75">
+                                <div class="column column-75 order-2">
                                     <div class="container">
                                         <div class="row no-padding">
                                             <div class="column">
@@ -267,7 +279,7 @@
 
                             <div class="row no-padding">
                                 <!-- About team member -->
-                                <div class="column column-75">
+                                <div class="column column-75 order-2">
                                     <div class="container">
                                         <div class="row no-padding">
                                             <div class="column">
@@ -295,7 +307,7 @@
                                     </div>
                                 </div>
                                 <!-- IMG of team member -->
-                                <div class="column column-25">
+                                <div class="column column-25 order-1">
                                     <img src="images/Ivan.jpeg" alt="A picture of Ivan">
                                 </div>
                             </div>
@@ -314,11 +326,11 @@
 
                             <div class="row no-padding">
                                 <!-- IMG of team member -->
-                                <div class="column column-25">
+                                <div class="column column-25 order-1">
                                     <img src="images/Arwa.png" alt="Photo of Arwa Hameed Alsubhi">
                                 </div>
                                 <!-- About team member -->
-                                <div class="column column-75">
+                                <div class="column column-75 order-2">
                                     <div class="container">
                                         <div class="row no-padding">
                                             <div class="column">
@@ -534,7 +546,14 @@
             right: 0;
             top: 0;
             z-index: 2;
-            height: 8rem;
+        }
+
+        nav, nav h3 {
+            line-height: 6rem;
+        }
+
+        h3 {
+            margin-bottom: 0;
         }
 
         footer {
@@ -652,5 +671,33 @@
             flex-direction: column;
             justify-content: space-around;
         }
+
+        @media(max-width:  40rem) {
+            .row .column {
+                /* center columns (for when they are smaller than full-width)  */
+                margin: 0 auto;
+            }
+
+            .row .column {
+                flex-grow: 1 !important;
+                max-width: unset !important;
+            }
+
+            nav .column {
+                text-align: center;
+            }
+
+            .column[class*="column-offset"] {
+                margin-left: 0 !important;
+            }
+
+            .order-1 {
+                order:  1;
+            }
+            .order-2 {
+                order:  2;
+            }
+        }
+
     </style>
 </html>
