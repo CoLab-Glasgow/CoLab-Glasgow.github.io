@@ -13,8 +13,7 @@
     <body>
         
         <div class="topnav" id="myTopnav">
-         
-  <a href="#home" class="active">CoLab</a>
+         <a href="#" class="title">CoLab</a>
    <a href="#team">Team</a>
   <a  href="#awards">Awards</a>
    <a  href="#papers">Papers</a>
@@ -839,7 +838,7 @@ iframe {
 }
 
 .topnav a {
-  float: left;
+  float: right;
   display: block;
   color: white; /* Update to match the desired font color */
   text-align: center;
@@ -847,6 +846,18 @@ iframe {
   text-decoration: none;
   font-size: 17px;
 }
+        
+ .topnav a.title {
+  float: left; /* Float the title to the left */
+  display: block;
+  color: white; /* Update to match the desired font color */
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+
+ 
+  }
 .topnav .icon {
   display: none;
 }
