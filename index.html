@@ -14,11 +14,11 @@
         
         <div class="topnav" id="myTopnav">
          <a href="#" class="title">CoLab</a>
-             <a  href="#outreach">Outreach</a>
-              <a  href="#tools">Tools</a>
-              <a  href="#papers">Papers</a>
-              <a  href="#awards">Awards</a>
               <a href="#team">Team</a>
+             <a  href="#awards">Awards</a>
+            <a  href="#papers">Papers</a>
+            <a  href="#tools">Tools</a>
+             <a  href="#outreach">Outreach</a>
    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
     <i class="fa fa-bars"></i></a>
 </div>
@@ -838,7 +838,7 @@ iframe {
 }
 
 .topnav a {
-  float: right;
+  float: left;
   display: block;
   color: white; /* Update to match the desired font color */
   text-align: center;
@@ -875,7 +875,9 @@ iframe {
 .dropdown-content a {
   color: #626470; /* Update to match the desired font color */
 }
-
+.title {
+    margin-right: 150px; /* Adjust the margin as needed */
+}
 /* Update the font color on hover for the topnav links and dropdown button */
 .topnav a:hover, .dropdown:hover .dropbtn {
   background-color: #F23C3C; /* Update to match the desired hover background color */
