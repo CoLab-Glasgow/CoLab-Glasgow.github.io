@@ -43,7 +43,7 @@
             <div class="container">
                 <div class="row">
                     <div class="column">
-                        <img class="logo" src="images/colab-logo.png" alt="CoLab Logo">
+                        <img class="responsive-image" src="images/colab-logo.png" alt="CoLab Logo">
                     </div>
                 </div>
             </div>
@@ -749,6 +749,10 @@ Participating in the Glasgow Science Festival and being able to inspire and igni
             margin-right: auto;
             width: 45%;
         }
+        .responsive-image {
+            max-width: 100%;
+            height: auto;
+           }
 
         .column {
             text-align: justify;
@@ -805,7 +809,7 @@ iframe {
             flex-direction: column;
             justify-content: space-around;
         }
-
+  
         @media(max-width:  40rem) {
             .row .column {
                 /* center columns (for when they are smaller than full-width)  */
